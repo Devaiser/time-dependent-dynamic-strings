@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<h2 id="time"></h2>
+<body>
+  <script language="JavaScript">
+    function display_title() {
+      date = new Date();
+      var hours = date.getHours();
+      if (hours >= 6) {
+        time_of_day = 'Доброе утро';
+      }
+      if ((hours >= 12) && (hours < 18)) {
+        time_of_day = 'Добрый день';
+      }
+      if (hours >= 18) {
+        time_of_day = 'Добрый вечер';
+      }
+      if ((hours >= 0) && (hours < 6)) {
+        time_of_day = 'Доброй ночи';
+      }
+      document.write(time_of_day + '!');
+    }
+  </script>
+  <script language="JavaScript">
+    display_title();
+  </script>
+  </h1>
+
+</body>
+
+</html>
